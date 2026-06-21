@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding:0 ;
+}
+
+h1,p {
+    text-align: center;
+}
+.div {
+    height:50px;
+    width:50px;
+    border: 1px solid black;
+}
+
+#container {
+    height:600px;
+    width:850px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px auto;
+    
+}
