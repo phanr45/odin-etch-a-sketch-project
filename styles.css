@@ -3,14 +3,12 @@ body {
     padding:0 ;
 }
 
-h1,p {
+
+.topLayer {
     text-align: center;
 }
-.div {
-    height:50px;
-    width:50px;
-    border: 1px solid black;
-}
+
+
 
 #container {
     height:600px;
