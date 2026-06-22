@@ -22,28 +22,31 @@ for (i = 1; i < 257; i++) {
 generateButton.addEventListener("click", function () {
     divContainer.innerHTML = ""
     let userInput = prompt("please enter a grid size: ex. 16, 32, 64")
+    if (userInput >=100) {
+        gridSize.textContent = "grid size too large, will cause problem";
+        gridSize.style.color = "red";
+    } else {
     for (let i = 0; i < userInput * userInput; i++) {
-        if (userInput >= 100)  {
-            gridSize.textContent = "too large, refresh"
-          
 
-        } else {
-            const div = document.createElement("div");
-            const cellsize = 800 / userInput;
-            div.classList.add("div")
-            div.style.height = `${cellsize}px`
-            div.style.width = `${cellsize}px`
-            div.style.backgroundColor = "grey"
-            gridSize.textContent = `grid size is now  ${userInput} x ${userInput}`
-            divContainer.appendChild(div)
+        const div = document.createElement("div");
+        const cellsize = 800 / userInput;
+        div.classList.add("div")
+        div.style.height = `${cellsize}px`
+        div.style.width = `${cellsize}px`
+        div.style.backgroundColor = "grey"
+        gridSize.textContent = `grid size is now  ${userInput} x ${userInput}`
+        divContainer.appendChild(div)
 
-            div.addEventListener("mouseenter", () => {
-                div.style.backgroundColor = "black"
-            })
-        }
+        div.addEventListener("mouseenter", () => {
+            div.style.backgroundColor = "black"
+        })
 
 
     }
+
+    }
+
+
 
 })
 
