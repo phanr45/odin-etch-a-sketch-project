@@ -9,12 +9,10 @@ body {
 }
 
 
-
 #container {
-    height:600px;
-    width:850px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 100px auto;
-    
+ margin: 16px auto;
+  width: 800px;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
 }
